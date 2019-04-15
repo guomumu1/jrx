@@ -1,0 +1,174 @@
+2019-04-15 19:18:54.369 - INFO  [           main] o.s.b.StartupInfoLogger        : Starting SpringBootGlApplication on NWAMJPT5RAI10K4 with PID 229396 (F:\jiang\code4\gl-project\springboot-gl\target\classes started by Administrator in F:\jiang\code4\gl-project)
+2019-04-15 19:18:54.418 - INFO  [           main] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2019-04-15 19:18:55.679 - INFO  [           main] egate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6ef0c6b9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-15 19:18:56.089 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2019-04-15 19:18:56.113 - INFO  [           main] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-15 19:18:56.139 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2019-04-15 19:18:56.140 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-15 19:18:56.267 - INFO  [           main] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2019-04-15 19:18:56.268 - INFO  [           main] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1806 ms
+2019-04-15 19:18:57.477 - INFO  [           main] edRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-04-15 19:18:57.616 - INFO  [           main] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-15 19:18:57.858 - INFO  [           main] cumentationPluginsBootstrapper : Context refreshed
+2019-04-15 19:18:57.923 - INFO  [           main] cumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-04-15 19:18:57.972 - INFO  [           main] w.s.ApiListingReferenceScanner : Scanning for api listing references
+2019-04-15 19:18:58.222 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
+2019-04-15 19:18:58.298 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-15 19:18:58.302 - INFO  [           main] o.s.b.StartupInfoLogger        : Started SpringBootGlApplication in 4.436 seconds (JVM running for 7.514)
+2019-04-15 19:19:04.445 - INFO  [nio-8080-exec-1] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-15 19:19:04.445 - INFO  [nio-8080-exec-1] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2019-04-15 19:19:04.497 - INFO  [nio-8080-exec-1] o.s.w.s.FrameworkServlet       : Completed initialization in 51 ms
+2019-04-15 19:19:39.268 - INFO  [nio-8080-exec-5] c.z.h.HikariDataSource         : HikariPool-1 - Starting...
+2019-04-15 19:19:39.486 - INFO  [nio-8080-exec-5] c.z.h.HikariDataSource         : HikariPool-1 - Start completed.
+2019-04-15 19:29:35.514 - INFO  [           main] o.s.b.StartupInfoLogger        : Starting SpringBootGlApplication on NWAMJPT5RAI10K4 with PID 237388 (F:\jiang\code4\gl-project\springboot-gl\target\classes started by Administrator in F:\jiang\code4\gl-project)
+2019-04-15 19:29:35.537 - INFO  [           main] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2019-04-15 19:29:37.351 - INFO  [           main] egate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5dc2c7f8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-15 19:29:37.699 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2019-04-15 19:29:37.736 - INFO  [           main] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-15 19:29:37.757 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2019-04-15 19:29:37.758 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-15 19:29:37.953 - INFO  [           main] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2019-04-15 19:29:37.954 - INFO  [           main] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2314 ms
+2019-04-15 19:29:39.906 - WARN  [           main] c.s.AbstractApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'documentationPluginsBootstrapper' defined in URL [jar:file:/F:/jiang/repo/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/F:/jiang/repo/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'customerController' method 
+public com.jrx.pojo.Result com.jrx.controller.CustomerController.insertCustomer(java.lang.Integer)
+to {POST /customer/insertCustomer}}: There is already 'customerController' bean method
+public com.jrx.pojo.Result<com.jrx.model.Customer> com.jrx.controller.CustomerController.insertCustomer(com.jrx.model.Customer) mapped.
+2019-04-15 19:29:39.906 - INFO  [           main] o.a.j.l.DirectJDKLog           : Stopping service [Tomcat]
+2019-04-15 19:29:39.921 - INFO  [           main] valuationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-04-15 19:32:11.475 - INFO  [           main] o.s.b.StartupInfoLogger        : Starting SpringBootGlApplication on NWAMJPT5RAI10K4 with PID 239232 (F:\jiang\code4\gl-project\springboot-gl\target\classes started by Administrator in F:\jiang\code4\gl-project)
+2019-04-15 19:32:11.485 - INFO  [           main] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2019-04-15 19:32:13.096 - INFO  [           main] egate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9f177b98] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-15 19:32:13.527 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2019-04-15 19:32:13.537 - INFO  [           main] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-15 19:32:13.566 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2019-04-15 19:32:13.567 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-15 19:32:13.758 - INFO  [           main] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2019-04-15 19:32:13.758 - INFO  [           main] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1949 ms
+2019-04-15 19:32:14.497 - WARN  [           main] c.s.AbstractApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'documentationPluginsBootstrapper' defined in URL [jar:file:/F:/jiang/repo/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/F:/jiang/repo/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'customerController' method 
+public com.jrx.pojo.Result<com.jrx.model.Customer> com.jrx.controller.CustomerController.insertCustomer(com.jrx.model.Customer)
+to {POST /customer/insertCustomer}}: There is already 'customerController' bean method
+public com.jrx.pojo.Result com.jrx.controller.CustomerController.insertCustomer(java.lang.Integer) mapped.
+2019-04-15 19:32:14.507 - INFO  [           main] o.a.j.l.DirectJDKLog           : Stopping service [Tomcat]
+2019-04-15 19:32:14.534 - INFO  [           main] valuationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-04-15 19:34:01.169 - INFO  [           main] o.s.b.StartupInfoLogger        : Starting SpringBootGlApplication on NWAMJPT5RAI10K4 with PID 240088 (F:\jiang\code4\gl-project\springboot-gl\target\classes started by Administrator in F:\jiang\code4\gl-project)
+2019-04-15 19:34:01.178 - INFO  [           main] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2019-04-15 19:34:02.396 - INFO  [           main] egate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e58ba771] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-15 19:34:02.757 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2019-04-15 19:34:02.775 - INFO  [           main] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-15 19:34:02.788 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2019-04-15 19:34:02.789 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-15 19:34:02.964 - INFO  [           main] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2019-04-15 19:34:02.965 - INFO  [           main] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1739 ms
+2019-04-15 19:34:03.657 - WARN  [           main] c.s.AbstractApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'documentationPluginsBootstrapper' defined in URL [jar:file:/F:/jiang/repo/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/F:/jiang/repo/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'customerController' method 
+public com.jrx.pojo.Result com.jrx.controller.CustomerController.insertCustomer(java.lang.Integer)
+to {POST /customer/insertCustomer}}: There is already 'customerController' bean method
+public com.jrx.pojo.Result<com.jrx.model.Customer> com.jrx.controller.CustomerController.insertCustomer(com.jrx.model.Customer) mapped.
+2019-04-15 19:34:03.660 - INFO  [           main] o.a.j.l.DirectJDKLog           : Stopping service [Tomcat]
+2019-04-15 19:34:03.668 - INFO  [           main] valuationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-04-15 19:36:15.528 - INFO  [           main] o.s.b.StartupInfoLogger        : Starting SpringBootGlApplication on NWAMJPT5RAI10K4 with PID 241700 (F:\jiang\code4\gl-project\springboot-gl\target\classes started by Administrator in F:\jiang\code4\gl-project)
+2019-04-15 19:36:15.538 - INFO  [           main] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2019-04-15 19:36:16.636 - INFO  [           main] egate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$901b0169] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-15 19:36:17.079 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2019-04-15 19:36:17.092 - INFO  [           main] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-15 19:36:17.106 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2019-04-15 19:36:17.107 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-15 19:36:17.235 - INFO  [           main] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2019-04-15 19:36:17.235 - INFO  [           main] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1649 ms
+2019-04-15 19:36:17.885 - WARN  [           main] c.s.AbstractApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'documentationPluginsBootstrapper' defined in URL [jar:file:/F:/jiang/repo/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/F:/jiang/repo/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'customerController' method 
+public com.jrx.pojo.Result com.jrx.controller.CustomerController.insertCustomer(java.lang.Integer)
+to {POST /customer/insertCustomer}}: There is already 'customerController' bean method
+public com.jrx.pojo.Result<com.jrx.model.Customer> com.jrx.controller.CustomerController.insertCustomer(com.jrx.model.Customer) mapped.
+2019-04-15 19:36:17.888 - INFO  [           main] o.a.j.l.DirectJDKLog           : Stopping service [Tomcat]
+2019-04-15 19:36:17.898 - INFO  [           main] valuationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-04-15 19:37:26.351 - INFO  [           main] o.s.b.StartupInfoLogger        : Starting SpringBootGlApplication on NWAMJPT5RAI10K4 with PID 224628 (F:\jiang\code4\gl-project\springboot-gl\target\classes started by Administrator in F:\jiang\code4\gl-project)
+2019-04-15 19:37:26.358 - INFO  [           main] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2019-04-15 19:37:27.472 - INFO  [           main] egate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$56098f29] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-15 19:37:27.834 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2019-04-15 19:37:27.848 - INFO  [           main] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-15 19:37:27.860 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2019-04-15 19:37:27.860 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-15 19:37:27.999 - INFO  [           main] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2019-04-15 19:37:28.000 - INFO  [           main] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1601 ms
+2019-04-15 19:37:28.739 - INFO  [           main] edRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-04-15 19:37:28.868 - INFO  [           main] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-15 19:37:29.060 - INFO  [           main] cumentationPluginsBootstrapper : Context refreshed
+2019-04-15 19:37:29.078 - INFO  [           main] cumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-04-15 19:37:29.106 - INFO  [           main] w.s.ApiListingReferenceScanner : Scanning for api listing references
+2019-04-15 19:37:29.252 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
+2019-04-15 19:37:29.339 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-15 19:37:29.343 - INFO  [           main] o.s.b.StartupInfoLogger        : Started SpringBootGlApplication in 3.35 seconds (JVM running for 4.55)
+2019-04-15 19:37:34.153 - INFO  [nio-8080-exec-1] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-15 19:37:34.154 - INFO  [nio-8080-exec-1] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2019-04-15 19:37:34.162 - INFO  [nio-8080-exec-1] o.s.w.s.FrameworkServlet       : Completed initialization in 8 ms
+2019-04-15 19:39:20.768 - INFO  [nio-8080-exec-1] c.z.h.HikariDataSource         : HikariPool-1 - Starting...
+2019-04-15 19:39:21.038 - INFO  [nio-8080-exec-1] c.z.h.HikariDataSource         : HikariPool-1 - Start completed.
+2019-04-15 19:41:56.620 - INFO  [           main] o.s.b.StartupInfoLogger        : Starting SpringBootGlApplication on NWAMJPT5RAI10K4 with PID 186696 (F:\jiang\code4\gl-project\springboot-gl\target\classes started by Administrator in F:\jiang\code4\gl-project)
+2019-04-15 19:41:56.628 - INFO  [           main] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2019-04-15 19:41:57.843 - INFO  [           main] egate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6bd1806] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-15 19:41:58.171 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2019-04-15 19:41:58.186 - INFO  [           main] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-15 19:41:58.196 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2019-04-15 19:41:58.197 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-15 19:41:58.353 - INFO  [           main] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2019-04-15 19:41:58.353 - INFO  [           main] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1679 ms
+2019-04-15 19:41:59.050 - INFO  [           main] edRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-04-15 19:41:59.180 - INFO  [           main] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-15 19:41:59.367 - INFO  [           main] cumentationPluginsBootstrapper : Context refreshed
+2019-04-15 19:41:59.385 - INFO  [           main] cumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-04-15 19:41:59.414 - INFO  [           main] w.s.ApiListingReferenceScanner : Scanning for api listing references
+2019-04-15 19:41:59.574 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
+2019-04-15 19:41:59.679 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-15 19:41:59.683 - INFO  [           main] o.s.b.StartupInfoLogger        : Started SpringBootGlApplication in 3.515 seconds (JVM running for 5.048)
+2019-04-15 19:42:03.807 - INFO  [nio-8080-exec-1] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-15 19:42:03.808 - INFO  [nio-8080-exec-1] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2019-04-15 19:42:03.816 - INFO  [nio-8080-exec-1] o.s.w.s.FrameworkServlet       : Completed initialization in 8 ms
+2019-04-15 19:42:12.049 - INFO  [nio-8080-exec-4] c.z.h.HikariDataSource         : HikariPool-1 - Starting...
+2019-04-15 19:42:12.257 - INFO  [nio-8080-exec-4] c.z.h.HikariDataSource         : HikariPool-1 - Start completed.
+2019-04-15 19:42:55.058 - INFO  [           main] o.s.b.StartupInfoLogger        : Starting SpringBootGlApplication on NWAMJPT5RAI10K4 with PID 14404 (F:\jiang\code4\gl-project\springboot-gl\target\classes started by Administrator in F:\jiang\code4\gl-project)
+2019-04-15 19:42:55.066 - INFO  [           main] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2019-04-15 19:42:56.313 - INFO  [           main] egate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5a801ed5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-15 19:42:56.644 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2019-04-15 19:42:56.662 - INFO  [           main] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-15 19:42:56.674 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2019-04-15 19:42:56.674 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-15 19:42:56.786 - INFO  [           main] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2019-04-15 19:42:56.786 - INFO  [           main] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1666 ms
+2019-04-15 19:42:57.537 - INFO  [           main] edRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-04-15 19:42:57.680 - INFO  [           main] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-15 19:42:57.873 - INFO  [           main] cumentationPluginsBootstrapper : Context refreshed
+2019-04-15 19:42:57.896 - INFO  [           main] cumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-04-15 19:42:57.924 - INFO  [           main] w.s.ApiListingReferenceScanner : Scanning for api listing references
+2019-04-15 19:42:58.079 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
+2019-04-15 19:42:58.111 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-15 19:42:58.116 - INFO  [           main] o.s.b.StartupInfoLogger        : Started SpringBootGlApplication in 3.496 seconds (JVM running for 4.993)
+2019-04-15 19:43:00.720 - INFO  [nio-8080-exec-2] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-15 19:43:00.721 - INFO  [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2019-04-15 19:43:00.731 - INFO  [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Completed initialization in 9 ms
+2019-04-15 19:57:54.563 - INFO  [           main] o.s.b.StartupInfoLogger        : Starting SpringBootGlApplication on NWAMJPT5RAI10K4 with PID 25440 (F:\jiang\code4\gl-project\springboot-gl\target\classes started by Administrator in F:\jiang\code4\gl-project)
+2019-04-15 19:57:54.568 - INFO  [           main] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2019-04-15 19:57:55.757 - INFO  [           main] egate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$839f8ada] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-15 19:57:56.078 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2019-04-15 19:57:56.092 - INFO  [           main] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-15 19:57:56.103 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2019-04-15 19:57:56.104 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-15 19:57:56.225 - INFO  [           main] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2019-04-15 19:57:56.225 - INFO  [           main] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1599 ms
+2019-04-15 19:57:56.963 - INFO  [           main] edRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-04-15 19:57:57.085 - INFO  [           main] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-15 19:57:57.273 - INFO  [           main] cumentationPluginsBootstrapper : Context refreshed
+2019-04-15 19:57:57.293 - INFO  [           main] cumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-04-15 19:57:57.321 - INFO  [           main] w.s.ApiListingReferenceScanner : Scanning for api listing references
+2019-04-15 19:57:57.520 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
+2019-04-15 19:57:57.555 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-15 19:57:57.558 - INFO  [           main] o.s.b.StartupInfoLogger        : Started SpringBootGlApplication in 3.38 seconds (JVM running for 4.556)
+2019-04-15 19:58:01.778 - INFO  [nio-8080-exec-1] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-15 19:58:01.778 - INFO  [nio-8080-exec-1] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2019-04-15 19:58:01.786 - INFO  [nio-8080-exec-1] o.s.w.s.FrameworkServlet       : Completed initialization in 8 ms

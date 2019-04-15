@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jrx.repository.CustomerMapper">
+  <resultMap id="BaseResultMap" type="com.jrx.model.Customer">
+    <id column="cust_id" jdbcType="INTEGER" property="custId" />
+    <result column="surname" jdbcType="VARCHAR" property="surname" />
+    <result column="gender" jdbcType="VARCHAR" property="gender" />
+    <result column="educa_des" jdbcType="VARCHAR" property="educaDes" />
+    <result column="mar_des" jdbcType="VARCHAR" property="marDes" />
+    <result column="birthday" jdbcType="INTEGER" property="birthday" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    cust_id, surname, gender, educa_des, mar_des, birthday, address
+  </sql>
+  <select id="selectByExample" parameterType="com.jrx.model.CustomerExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    'true' as QUERYID,
+    <include refid="Base_Column_List" />
+    from customer_table
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from customer_table
+    where cust_id = #{custId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from customer_table
+    where cust_id = #{custId,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.jrx.model.CustomerExample">
+    delete from customer_table
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.jrx.model.Customer">
+    insert into customer_table (cust_id, surname, gender, 
+      educa_des, mar_des, birthday, 
+      address)
+    values (#{custId,jdbcType=INTEGER}, #{surname,jdbcType=VARCHAR}, #{gender,jdbcType=VARCHAR}, 
+      #{educaDes,jdbcType=VARCHAR}, #{marDes,jdbcType=VARCHAR}, #{birthday,jdbcType=INTEGER}, 
+      #{address,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.jrx.model.Customer">
+    insert into customer_table
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="custId != null">
+        cust_id,
+      </if>
+      <if test="surname != null">
+        surname,
+      </if>
+      <if test="gender != null">
+        gender,
+      </if>
+      <if test="educaDes != null">
+        educa_des,
+      </if>
+      <if test="marDes != null">
+        mar_des,
+      </if>
+      <if test="birthday != null">
+        birthday,
+      </if>
+      <if test="address != null">
+        address,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="custId != null">
+        #{custId,jdbcType=INTEGER},
+      </if>
+      <if test="surname != null">
+        #{surname,jdbcType=VARCHAR},
+      </if>
+      <if test="gender != null">
+        #{gender,jdbcType=VARCHAR},
+      </if>
+      <if test="educaDes != null">
+        #{educaDes,jdbcType=VARCHAR},
+      </if>
+      <if test="marDes != null">
+        #{marDes,jdbcType=VARCHAR},
+      </if>
+      <if test="birthday != null">
+        #{birthday,jdbcType=INTEGER},
+      </if>
+      <if test="address != null">
+        #{address,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.jrx.model.CustomerExample" resultType="java.lang.Long">
+    select count(*) from customer_table
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update customer_table
+    <set>
+      <if test="record.custId != null">
+        cust_id = #{record.custId,jdbcType=INTEGER},
+      </if>
+      <if test="record.surname != null">
+        surname = #{record.surname,jdbcType=VARCHAR},
+      </if>
+      <if test="record.gender != null">
+        gender = #{record.gender,jdbcType=VARCHAR},
+      </if>
+      <if test="record.educaDes != null">
+        educa_des = #{record.educaDes,jdbcType=VARCHAR},
+      </if>
+      <if test="record.marDes != null">
+        mar_des = #{record.marDes,jdbcType=VARCHAR},
+      </if>
+      <if test="record.birthday != null">
+        birthday = #{record.birthday,jdbcType=INTEGER},
+      </if>
+      <if test="record.address != null">
+        address = #{record.address,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update customer_table
+    set cust_id = #{record.custId,jdbcType=INTEGER},
+      surname = #{record.surname,jdbcType=VARCHAR},
+      gender = #{record.gender,jdbcType=VARCHAR},
+      educa_des = #{record.educaDes,jdbcType=VARCHAR},
+      mar_des = #{record.marDes,jdbcType=VARCHAR},
+      birthday = #{record.birthday,jdbcType=INTEGER},
+      address = #{record.address,jdbcType=VARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.jrx.model.Customer">
+    update customer_table
+    <set>
+      <if test="surname != null">
+        surname = #{surname,jdbcType=VARCHAR},
+      </if>
+      <if test="gender != null">
+        gender = #{gender,jdbcType=VARCHAR},
+      </if>
+      <if test="educaDes != null">
+        educa_des = #{educaDes,jdbcType=VARCHAR},
+      </if>
+      <if test="marDes != null">
+        mar_des = #{marDes,jdbcType=VARCHAR},
+      </if>
+      <if test="birthday != null">
+        birthday = #{birthday,jdbcType=INTEGER},
+      </if>
+      <if test="address != null">
+        address = #{address,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where cust_id = #{custId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.jrx.model.Customer">
+    update customer_table
+    set surname = #{surname,jdbcType=VARCHAR},
+      gender = #{gender,jdbcType=VARCHAR},
+      educa_des = #{educaDes,jdbcType=VARCHAR},
+      mar_des = #{marDes,jdbcType=VARCHAR},
+      birthday = #{birthday,jdbcType=INTEGER},
+      address = #{address,jdbcType=VARCHAR}
+    where cust_id = #{custId,jdbcType=INTEGER}
+  </update>
+</mapper>

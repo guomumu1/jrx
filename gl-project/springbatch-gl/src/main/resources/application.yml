@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/jrx?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: 123
+    #Éú³ÉspringbatchµÄsqlÓï¾ä
+    schema: classpath:/org/springframework/batch/core/schema-mysql.sql
+    type: com.zaxxer.hikari.HikariDataSource
+  batch:
+    initialize-schema: always
